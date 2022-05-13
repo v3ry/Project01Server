@@ -43,7 +43,7 @@ app.post("/send", (req, res) => {
       sender: `${data.name} <${data.email}>`,
       to: process.env.EMAIL, // receiver email,
       subject: data.subject,
-      text: `Vous avez reçu un message \n Nom: \n${data.name}\n\n Email:\n<${data.email}>\n\nObjet: \n${data.subject}\n\n Message: \n${data.message}`,
+      text: `Vous avez reçu un message \n Nom: ${data.name}\n\n Email: <${data.email}>\n\nObjet: ${data.subject}\n\n Message: \n${data.message}`,
     };
     transporter.sendMail(mail, (err, data) => {
       if (err) {
