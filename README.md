@@ -5,7 +5,7 @@ Déja pour avoir les modules, faite un "npm install".
 Il faut rajouter un fichier ".env" sans les "" à la racine.
 Dans se fichier il faut marquer ces 2 lignes
 
-EMAIL=votreMail/n
+EMAIL=votreMail
 PASS=votrePass
 
 et changer votre serveur smtp ligne 17 dans server.js.
